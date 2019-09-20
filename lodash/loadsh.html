@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>海贼王</title>
+</head>
+<body>
+<script src="https://cdn.bootcss.com/lodash.js/4.17.15/lodash.min.js"></script>
+  <script>
+// let arr = [1,2,3]
+// arr = _.chunk(arr,2)
+var arr = [false,1,2,2,3,4,null]
+// 过滤假值 返回一个新的数组 原数组不动
+// const array = _.compact(arr)
+// 创建新的数组 连接
+// const array = _.concat(arr,{a:12,b:12})
+// 过滤数组里面的数据 返回一个新数组
+// const array = _.difference(arr, [2],[3],[null],[false,1])
+// 过滤里面的数据 最后一个参数是遍历每个数据 再进行比较 匹对成功 就过滤掉
+// const array = _.differenceBy(arr, [2,2.3], Math.floor)
+// 切数组 
+const array = _.drop(arr,2)
+console.log(arr,array)
+console.log(_.prototype)
+  </script>
+</body>
+</html>
